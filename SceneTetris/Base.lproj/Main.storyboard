@@ -19,9 +19,14 @@
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edO-Wl-Pz6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SNa-4t-IKV" appends="YES" id="doU-Hc-ma3"/>
+                                </connections>
                             </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="edO-Wl-Pz6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HyM-98-4xG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="edO-Wl-Pz6" secondAttribute="bottom" id="SW8-mB-Q7q"/>
@@ -35,6 +40,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SNa-4t-IKV">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="0FZ-jU-0PA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
