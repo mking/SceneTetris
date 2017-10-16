@@ -9,9 +9,11 @@
 import Foundation
 
 class Block {
-    var position: Int
+    let x: Int
+    let y: Int
     
-    init(position: Int) {
-        self.position = position
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
     }
 }
